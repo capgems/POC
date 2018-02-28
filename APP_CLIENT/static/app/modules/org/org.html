@@ -1,0 +1,46 @@
+
+
+<div  ng-controller="OrganisationController">
+<!-- Wide card with share menu button -->
+
+ <div class="mdl-grid">
+
+<div class="mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet " ng-repeat="obj in data">
+<div class="demo-card-wide mdl-card mdl-shadow--2dp">
+  <div class="mdl-card__title" ng-style="{'background':'url({{obj.imgUrl}}) center / cover'}">
+    <h2 class="mdl-card__title-text">{{obj.title}}</h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+   {{obj.Desc}}
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Get Started
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+<!-- 
+<script type="text/javascript">
+angular.element.(document).ready(function(){
+	var file="static/app/modules/org/orgcontroller.js"
+	   // DOM: Create the script element
+    var jsElm = document.createElement("script");
+    // set the type attribute
+    jsElm.type = "application/javascript";
+    // make the script element load file
+    jsElm.src = file;
+    // finally insert the element to the body element in order to load the script
+    document.body.appendChild(jsElm);
+	
+})
+
+</script> -->
